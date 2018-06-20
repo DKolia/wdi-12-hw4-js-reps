@@ -131,11 +131,11 @@ console.log("This is Homework 4");
 // 7. Let's get even  //////////////////////////////////////////////////////////
 // Print out the even numbers that are within the range of 1 - 100.
 
-for (let i = 1; i <= 100; i++) {
-  if (i % 2 === 0){     // Using %2 to create a counter to log even numbers
-    console.log(i + " is an even number.");
-  }
-}
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0){     // Using %2 to create a counter to log even numbers
+//     console.log(i + " is an even number.");
+//   }
+// }
 
 
 // Adjust your code to add a message next to the even number that says: "is an even number".
@@ -154,6 +154,14 @@ for (let i = 1; i <= 100; i++) {
 //
 // I found a 5. High five!
 // I found a 10. High five!
+
+for (let i = 0; i <= 100; i++) {
+  if (i % 5 === 0){     // Using % 5 to create a list of numbers that are ONLY multiples of five
+    console.log("I found a " + i + ". High five!");
+  }
+}
+
+
 // Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
 // Example Output:
 //
@@ -163,6 +171,14 @@ for (let i = 1; i <= 100; i++) {
 // I found a 9. Three is a crowd
 // I found a 10. High five!
 
+for (let i = 0; i <= 100; i++) {
+  if (i % 5 === 0){     // Using % 5 to create a list of numbers that are ONLY multiples of five
+    console.log("I found a " + i + ". High five!");
+  }
+  if (i % 3 === 0){
+    console.log("I found a " + i + ". Three is a crowd");
+  }
+}
 
 
 // 9. Savings account //////////////////////////////////////////////////////////
