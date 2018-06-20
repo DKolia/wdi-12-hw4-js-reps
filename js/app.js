@@ -30,6 +30,8 @@ console.log(firstVariable); // Prints 5
 // Write an expression that takes the string "Hello, my name is " and the variable yourName so that it returns a new string with them concatenated.
 // ex: Hello, my name is Jean Valjean
 
+var davidKolia = "David Kolia";
+console.log("Hello, my name is " + davidKolia + ".");
 
 
 // 3. Booleans  ////////////////////////////////////////////////////////////////
