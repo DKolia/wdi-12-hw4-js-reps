@@ -155,11 +155,11 @@ console.log("This is Homework 4");
 // I found a 5. High five!
 // I found a 10. High five!
 
-for (let i = 0; i <= 100; i++) {
-  if (i % 5 === 0){     // Using % 5 to create a list of numbers that are ONLY multiples of five
-    console.log("I found a " + i + ". High five!");
-  }
-}
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 5 === 0){     // Using % 5 to create a list of numbers that are ONLY multiples of five
+//     console.log("I found a " + i + ". High five!");
+//   }
+// }
 
 
 // Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three.
@@ -171,23 +171,35 @@ for (let i = 0; i <= 100; i++) {
 // I found a 9. Three is a crowd
 // I found a 10. High five!
 
-for (let i = 0; i <= 100; i++) {
-  if (i % 5 === 0){     // Using % 5 to create a list of numbers that are ONLY multiples of five
-    console.log("I found a " + i + ". High five!");
-  }
-  if (i % 3 === 0){
-    console.log("I found a " + i + ". Three is a crowd");
-  }
-}
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 5 === 0){     // Using % 5 to create a list of numbers that are ONLY multiples of five
+//     console.log("I found a " + i + ". High five!");
+//   }
+//   if (i % 3 === 0){
+//     console.log("I found a " + i + ". Three is a crowd");
+//   }
+// }
 
 
 // 9. Savings account //////////////////////////////////////////////////////////
 // Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+
+let bank_account = 0;       // Defines Variable
+for (let i = 1; i <= 10; i++) {     // Defines when loop begins and ends
+  bank_account = (bank_account += i)    // " += " causes the sum of i to be consistently added to the account
+}
+  console.log(bank_account);    // Logs final account numbers
+
 // Check your work! Your banck_account should have $55 in it.
 //
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 // Check your work! Your banck_account should have $10,100 in it.
 
+let bank_account2 = 0;
+for (let i = 1; i <= 100; i++) {
+  bank_account2 = (bank_account2 += i * 2)  // This line adds a "* 2" to double the pay each week
+}
+  console.log(bank_account2);
 
 
 // 10. Multiples of 3 and 5 ////////////////////////////////////////////////////
