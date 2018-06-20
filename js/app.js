@@ -107,30 +107,37 @@ console.log("This is Homework 4");
 // 6. Just Loop It  ////////////////////////////////////////////////////////////
 // Write code that will print out all the numbers in the range 0 - 10.
 
-for (let i = 0; i <= 10; i++) {
-  console.log(i);
-}
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
 
 
 // Write code that will print out all the numbers in the range 10 - 4000.
 
-for (let i = 10; i <= 4000; i++) {
-  console.log(i);
-}
+// for (let i = 10; i <= 4000; i++) {
+//   console.log(i);
+// }
 
 
 // Write code that will print out every other number in the range 10 - 4000.
 
-for (let i = 10; i < 4000; i++) {
-  if (i % 2 === 0){     // Using %2 to create a counter that skips odd numbers
-    console.log(i);
-  }
-}
+// for (let i = 10; i < 4000; i++) {
+//   if (i % 2 === 0){     // Using %2 to create a counter that skips odd numbers
+//     console.log(i);
+//   }
+// }
 
 
 // 7. Let's get even  //////////////////////////////////////////////////////////
 // Print out the even numbers that are within the range of 1 - 100.
-//
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0){     // Using %2 to create a counter to log even numbers
+    console.log(i + " is an even number.");
+  }
+}
+
+
 // Adjust your code to add a message next to the even number that says: "is an even number".
 //
 // Example Output:
