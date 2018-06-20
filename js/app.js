@@ -57,38 +57,51 @@ console.log("This is Homework 4");
 // Write code that will print out "mooooo" if the variable animal is equal to cow.
 
 
-function theFarm(animal) {  // Sets up the function and parameters
-  if (animal === "cow") {
-    console.log("mooooo");
-  }
-}
-
-theFarm("cow")  // Calls the function
+// function theFarm(animal) {  // Sets up the function and parameters
+//   if (animal === "cow") {
+//     console.log("mooooo");
+//   }
+// }
+//
+// theFarm("cow")  // Calls the function
 
 
 // Change your code so that if the variable animal is anything other than a cow, your should print out "Hey! You're not a cow."
 
 
-function theFarm(animal) {  // Sets up the function including else statement
-  if (animal === "cow") {
-    console.log("mooooo");
-  } else {
-    console.log("Hey! You're not a cow.");
-  }
-}
-
-theFarm("cow")  //  Calls the function, including incorrect answer
-const animal = "sparrow";
-theFarm(animal)
+// function theFarm(animal) {  // Sets up the function including else statement
+//   if (animal === "cow") {
+//     console.log("mooooo");
+//   } else {
+//     console.log("Hey! You're not a cow.");
+//   }
+// }
+//
+// theFarm("cow")  //  Calls the function, including incorrect answer
+// const animal = "sparrow";
+// theFarm(animal)
 
 
 // 5.  Driver's Ed /////////////////////////////////////////////////////////////
 // Write a variable that will hold a person's age.
 
+let personsAge = 50       // Sets the variable and assigns value
+console.log(personsAge);  // Logs said variable
+
 // Write code that will print out "Here are the keys", if the age is 16 years or older.
+
+let personsAge2 = (35)          // Sets variable and assigns value
+  if (personsAge2 => 16) {      // If greater than 16....
+  console.log("Here are the keys"); }   // Run this log
 
 // Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
 
+let personsAge3 = 15.50          // Sets the variable and assigns value
+  if (personsAge3 >= 16) {       // Sets if condition
+  console.log("Here are the keys"); }   // Log if greater than 16
+  else {
+    console.log("Sorry, you're too young.");  // Logs if less than 16
+  }
 
 
 // 6. Just Loop It  ////////////////////////////////////////////////////////////
