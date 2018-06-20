@@ -19,36 +19,38 @@ console.log("This is Homework 4");
 // change the value of secondVariable to a string.
 // What is the value of firstVariable?
 
-var firstVariable = "Hello World";
-var firstVariable = 5;
-var secondVariable = firstVariable
-var secondVariable = "This is a String!"
-console.log(firstVariable); // Prints 5
+// var firstVariable = "Hello World";
+// var firstVariable = 5;
+// var secondVariable = firstVariable
+// var secondVariable = "This is a String!"
+// console.log(firstVariable); // Prints 5
 
 
 // 2B. Create a variable called yourName and set it equal to your name as a string.
 // Write an expression that takes the string "Hello, my name is " and the variable yourName so that it returns a new string with them concatenated.
 // ex: Hello, my name is Jean Valjean
 
-var davidKolia = "David Kolia";
-console.log("Hello, my name is " + davidKolia + ".");
+// var davidKolia = "David Kolia";
+// console.log("Hello, my name is " + davidKolia + ".");
 
 
 // 3. Booleans  ////////////////////////////////////////////////////////////////
 // Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true. 👋
-//   const a = 4;
-//   const b = 53;
-//   const c = 57;
-//   const d = 16;
-//   const e = 'Kevin';
-// a _ b;
-// c _ d;
-// 'Name' ___ 'Name';
-// a _ b ___ c;
-// a _ a ___ d;
-// e ___ 'Kevin';
-// 48 ___ '48';
-// ...
+
+
+  const a = 4;
+  const b = 53;
+  const c = 57;
+  const d = 16;
+  const e = 'Kevin';
+
+a < b;
+c > d;
+'Name' === 'Name';
+a + b >= c;
+a * a >= d;
+e >= 'Kevin';
+48 == '48';
 
 
 
