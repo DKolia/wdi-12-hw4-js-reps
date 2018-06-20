@@ -38,27 +38,48 @@ console.log("This is Homework 4");
 // Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true. 👋
 
 
-  const a = 4;
-  const b = 53;
-  const c = 57;
-  const d = 16;
-  const e = 'Kevin';
+  // const a = 4;
+  // const b = 53;
+  // const c = 57;
+  // const d = 16;
+  // const e = 'Kevin';
 
-a < b;
-c > d;
-'Name' === 'Name';
-a + b >= c;
-a * a >= d;
-e >= 'Kevin';
-48 == '48';
-
+// a < b;
+// c > d;
+// 'Name' === 'Name';
+// a + b >= c;
+// a * a >= d;
+// e >= 'Kevin';
+// 48 == '48';
 
 
 // 4.  The Farm  ///////////////////////////////////////////////////////////////
 // Write code that will print out "mooooo" if the variable animal is equal to cow.
 
+
+function theFarm(animal) {  // Sets up the function and parameters
+  if (animal === "cow") {
+    console.log("mooooo");
+  }
+}
+
+theFarm("cow")  // Calls the function
+
+
 // Change your code so that if the variable animal is anything other than a cow, your should print out "Hey! You're not a cow."
 
+
+function theFarm(animal) {  // Sets up the function including else statement
+  if (animal === "cow") {
+    console.log("mooooo");
+  } else {
+    console.log("Hey! You're not a cow.");
+  }
+}
+
+theFarm("cow")  //  Calls the function, including incorrect answer
+const animal = "sparrow";
+theFarm(animal)
 
 
 // 5.  Driver's Ed /////////////////////////////////////////////////////////////
