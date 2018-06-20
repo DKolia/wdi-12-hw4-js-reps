@@ -4,9 +4,11 @@ console.log("This is Homework 4");
 
 // 1. Conceptual Questions  ////////////////////////////////////////////////////
 // How do we assign a value to a variable?
+// --We would use the " = " assignment operator.
 // How do we change the value of a variable?
+// --We would use the " = " once again.
 // How do we assign an existing variable to a new variable?
-
+// --Using the = assignment An example would be if we wrote: "var A = var B"
 
 
 // 2. Strings //////////////////////////////////////////////////////////////////
@@ -16,6 +18,14 @@ console.log("This is Homework 4");
 // store the value of firstVariable into a new variable called secondVariable
 // change the value of secondVariable to a string.
 // What is the value of firstVariable?
+
+var firstVariable = "Hello World";
+var firstVariable = 5;
+var secondVariable = firstVariable
+var secondVariable = "This is a String!"
+console.log(firstVariable); // Prints 5
+
+
 // 2B. Create a variable called yourName and set it equal to your name as a string.
 // Write an expression that takes the string "Hello, my name is " and the variable yourName so that it returns a new string with them concatenated.
 // ex: Hello, my name is Jean Valjean
