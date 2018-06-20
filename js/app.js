@@ -85,32 +85,47 @@ console.log("This is Homework 4");
 // 5.  Driver's Ed /////////////////////////////////////////////////////////////
 // Write a variable that will hold a person's age.
 
-let personsAge = 50       // Sets the variable and assigns value
-console.log(personsAge);  // Logs said variable
-
-// Write code that will print out "Here are the keys", if the age is 16 years or older.
-
-let personsAge2 = (35)          // Sets variable and assigns value
-  if (personsAge2 => 16) {      // If greater than 16....
-  console.log("Here are the keys"); }   // Run this log
-
-// Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
-
-let personsAge3 = 15.50          // Sets the variable and assigns value
-  if (personsAge3 >= 16) {       // Sets if condition
-  console.log("Here are the keys"); }   // Log if greater than 16
-  else {
-    console.log("Sorry, you're too young.");  // Logs if less than 16
-  }
+// let personsAge = 50       // Sets the variable and assigns value
+// console.log(personsAge);  // Logs said variable
+//
+// // Write code that will print out "Here are the keys", if the age is 16 years or older.
+//
+// let personsAge2 = (35)          // Sets variable and assigns value
+//   if (personsAge2 => 16) {      // If greater than 16....
+//   console.log("Here are the keys"); }   // Run this log
+//
+// // Change your code so that if the age is younger than 16, a message will print "Sorry, you're too young."
+//
+// let personsAge3 = 15.50          // Sets the variable and assigns value
+//   if (personsAge3 >= 16) {       // Sets if condition
+//   console.log("Here are the keys"); }   // Log if greater than 16
+//   else {
+//     console.log("Sorry, you're too young.");  // Logs if less than 16
+//   }
 
 
 // 6. Just Loop It  ////////////////////////////////////////////////////////////
 // Write code that will print out all the numbers in the range 0 - 10.
 
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+
 // Write code that will print out all the numbers in the range 10 - 4000.
+
+for (let i = 10; i <= 4000; i++) {
+  console.log(i);
+}
+
 
 // Write code that will print out every other number in the range 10 - 4000.
 
+for (let i = 10; i < 4000; i++) {
+  if (i % 2 === 0){     // Using %2 to create a counter that skips odd numbers
+    console.log(i);
+  }
+}
 
 
 // 7. Let's get even  //////////////////////////////////////////////////////////
