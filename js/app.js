@@ -264,41 +264,67 @@ console.log("This is Homework 4");
 // 13. Mix It Up  //////////////////////////////////////////////////////////////
 // Given the following array const myArray = [5 ,10 ,500, 20]
 
-myArray = [5, 10, 500, 20]
+// myArray = [5, 10, 500, 20]
 
 // using the push method, add the string "Egon" to the end of the array.
 
-myArray.push("Egon");
-console.log(myArray);
+// myArray.push("Egon");
+// console.log(myArray);
 
 // using a method, remove the string from the end of the array.
 
-myArray.pop("Egon");
-console.log(myArray);
+// myArray.pop("Egon");
+// console.log(myArray);
 
 // using the unshift method, add the string "Bob Marley" to the beginning of the array
 
-myArray.unshift("Bob Marley");
-console.log(myArray);
+// myArray.unshift("Bob Marley");
+// console.log(myArray);
 
 // using a different method, remove the string from the beginning of the array
 
-myArray.splice(0, 1);
-console.log(myArray);
+// myArray.splice(0, 1);
+// console.log(myArray);
 
 // use the reverse method on this array
 
-myArray.reverse();
-console.log(myArray);
+// myArray.reverse();
+// console.log(myArray);
 
 
 // 14. Biggie Smalls  //////////////////////////////////////////////////////////
 // Write an if..else statement:
-//
+
+x = 1;
+
+if (x = 1) {
+  console.log("This is true.");
+} else {
+  console.log("This is false.");
+}
+
 // console.log little number if the number is entered is less than 100
-//
+
+x = 5
+if (x < 100) {
+  console.log("That is a little number");
+}
+
 // If the number entered is 100 or more, alert big number.
 
+x = 5
+if (x < 100) {
+  console.log("This is a little number.");
+} else {
+  alert("That is a big number!");
+}
+
+y = 500
+if (y < 100) {
+  console.log("This is a little number.");
+} else {
+  alert("That is a big number!");
+}
 
 
 // 15. Monkey in the Middle ////////////////////////////////////////////////////
