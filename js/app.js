@@ -223,36 +223,42 @@ console.log("This is Homework 4");
 // 11. Easy Does It ////////////////////////////////////////////////////////////
 // Create an array that contains three quotes and store it in a variable called quotes.
 
-let quotes = ["This is string1", "This is string2", "This is string 3"];
-console.log(quotes);
+// let quotes = ["This is string1", "This is string2", "This is string 3"];
+// console.log(quotes);
 
 // Random
 // Given the following array const randomThings = [1, 10, "Hello", true]
 
-const randomThings = [1, 10, "Hello", true]
+// const randomThings = [1, 10, "Hello", true]
 
 // how do you access the 1st element in the array?
-console.log(randomThings[0]);   // JS is a base 0 index
+// console.log(randomThings[0]);   // JS is a base 0 index
 
 // Change the value of "Hello" to "World".
 
-randomThings[2] = "World";
-console.log(randomThings[2]);
+// randomThings[2] = "World";
+// console.log(randomThings[2]);
 
 // Check the value of the array to make sure it updated the array.
 
-console.log(randomThings);
+// console.log(randomThings);
 
 
 // 12. We've Got Class  ////////////////////////////////////////////////////////
 // Given the following array const ourClass = ["Gizmo", "Zoom", "Github", "Slack"]
-//
-// What would you write to access the 3rd element of the array?
-//
-// Change the value of "Github" to "Octocat"
-//
-// Add a new element, "Cloud City" to the array.
 
+ourClass = ["Gizmo", "Zoom", "Github", "Slack"];
+
+// What would you write to access the 3rd element of the array?
+console.log(ourClass[2]);
+
+// Change the value of "Github" to "Octocat"
+ourClass[2] = "Octocat";
+console.log(ourClass[2]);
+
+// Add a new element, "Cloud City" to the array.
+ourClass.push("Cloud City");
+console.log(ourClass);
 
 
 // 13. Mix It Up  //////////////////////////////////////////////////////////////
