@@ -369,76 +369,76 @@ console.log("This is Homework 4");
 // 16. What's in Your Closet? //////////////////////////////////////////////////
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
 // Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
 // What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
 
-console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+// console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
 
 // Kristyn can't find her left shoe. Remove this item from her closet and save it to a variable named kristynShoe.
 
-const kristynsShoe = kristynsCloset.splice(0, 1);
-console.log(kristynsCloset);
-console.log(kristynsShoe);
+// const kristynsShoe = kristynsCloset.splice(0, 1);
+// console.log(kristynsCloset);
+// console.log(kristynsShoe);
 
 // Kristyn just bought some sweet shades! Add "raybans" to her closet after "yellow knit hat".
 
-kristynsCloset.splice(5, 0, "raybans");   // 5 begins the splice- 0 removes no items from the array, and the string is then added
-console.log(kristynsCloset);              // Used Splice and logged to prove
+// kristynsCloset.splice(5, 0, "raybans");   // 5 begins the splice- 0 removes no items from the array, and the string is then added
+// console.log(kristynsCloset);              // Used Splice and logged to prove
 
 // Kristyn spilled coffee on her hat... modify this item to read "stained knit hat" instead of yellow.
 
-kristynsCloset[5] = "stained knit hat";   // asked for and renamed index 5 item
-console.log(kristynsCloset);
+// kristynsCloset[5] = "stained knit hat";   // asked for and renamed index 5 item
+// console.log(kristynsCloset);
 
 // Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
 
-console.log(thomsCloset[0][0]);
+// console.log(thomsCloset[0][0]);
 
 // In the same way, access one item from Thom's pants array.
 
-console.log(thomsCloset[1][0]);
+// console.log(thomsCloset[1][0]);
 
 // Access one item from Thom's accessories array.
 
-console.log(thomsCloset[2][1]);
+// console.log(thomsCloset[2][1]);
 
 // Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
 
-console.log("Thom is looking fabulous in his " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ", and his " + thomsCloset[2][1] + ".");
+// console.log("Thom is looking fabulous in his " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ", and his " + thomsCloset[2][1] + ".");
 
 // Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 
-thomsCloset[1][2] = "Footie Pajamas"
-console.log(thomsCloset[1]);          // Logs the entire array
+// thomsCloset[1][2] = "Footie Pajamas"
+// console.log(thomsCloset[1]);          // Logs the entire array
 
 // 17. Functions  //////////////////////////////////////////////////////////////
 // printGreeting
@@ -447,6 +447,12 @@ console.log(thomsCloset[1]);          // Logs the entire array
 // console.log(printGreeting("Slimer"));
 // => Hello there, Slimer!
 
+
+const printGreeting = (printName) => {
+  console.log("Hello there, " + printName +"!");
+}
+
+printGreeting("Slimer")
 
 
 // 18. reverseWordOrder ////////////////////////////////////////////////////////
