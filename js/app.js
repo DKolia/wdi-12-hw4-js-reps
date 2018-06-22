@@ -210,27 +210,38 @@ console.log("This is Homework 4");
 // 👏 You just solved Project Euler problem 1! 👏
 
 
-x = 0;
-
-for (let i = 0; i < 1000; i++) {
-  if (i % 3 === 0 || i % 5 === 0) {  //  Tried running two if statements, but was getting wrong answer out of for loop. Perhaps was double counting multiples of 15- thus increasing the number. Putting the || operator seems to have fixed that.
-    x += i;
-  }
-}
-console.log(x);
+// x = 0;
+//
+// for (let i = 0; i < 1000; i++) {
+//   if (i % 3 === 0 || i % 5 === 0) {  //  Tried running two if statements, but was getting wrong answer out of for loop. Perhaps was double counting multiples of 15- thus increasing the number. Putting the || operator seems to have fixed that.
+//     x += i;
+//   }
+// }
+// console.log(x);
 
 
 // 11. Easy Does It ////////////////////////////////////////////////////////////
 // Create an array that contains three quotes and store it in a variable called quotes.
+
+let quotes = ["This is string1", "This is string2", "This is string 3"];
+console.log(quotes);
+
 // Random
 // Given the following array const randomThings = [1, 10, "Hello", true]
-//
+
+const randomThings = [1, 10, "Hello", true]
+
 // how do you access the 1st element in the array?
-//
+console.log(randomThings[0]);   // JS is a base 0 index
+
 // Change the value of "Hello" to "World".
-//
+
+randomThings[2] = "World";
+console.log(randomThings[2]);
+
 // Check the value of the array to make sure it updated the array.
 
+console.log(randomThings);
 
 
 // 12. We've Got Class  ////////////////////////////////////////////////////////
