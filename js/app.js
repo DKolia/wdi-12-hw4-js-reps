@@ -295,41 +295,55 @@ console.log("This is Homework 4");
 // 14. Biggie Smalls  //////////////////////////////////////////////////////////
 // Write an if..else statement:
 
-x = 1;
-
-if (x = 1) {
-  console.log("This is true.");
-} else {
-  console.log("This is false.");
-}
+// x = 1;
+//
+// if (x = 1) {
+//   console.log("This is true.");
+// } else {
+//   console.log("This is false.");
+// }
 
 // console.log little number if the number is entered is less than 100
 
-x = 5
-if (x < 100) {
-  console.log("That is a little number");
-}
+// x = 5
+// if (x < 100) {
+//   console.log("That is a little number");
+// }
 
 // If the number entered is 100 or more, alert big number.
 
-x = 5
-if (x < 100) {
-  console.log("This is a little number.");
-} else {
-  alert("That is a big number!");
-}
+// x = 5
+// if (x < 100) {
+//   console.log("This is a little number.");
+// } else {
+//   alert("That is a big number!");
+// }
 
-y = 500
-if (y < 100) {
-  console.log("This is a little number.");
-} else {
-  alert("That is a big number!");
-}
+// y = 500
+// if (y < 100) {
+//   console.log("This is a little number.");
+// } else {
+//   alert("That is a big number!");
+// }
 
 
 // 15. Monkey in the Middle ////////////////////////////////////////////////////
 // Write an if...else if...else statement:
-//
+
+
+x = 1                // Uncomment to test if-else-if-else statement
+// x = 500           // Uncomment to test if-else-if-else statement
+// x = "bananas"     // Uncomment to test if-else-if-else statement
+
+if (x === 1) {
+  console.log("x is equal to 1.");
+} else if (x > 1) {
+  console.log("x is greater than one.");
+} else {
+  console.log("Hmm, x may not be a number...");
+}
+
+
 // console.log little number if the number entered is less than 5.
 //
 // If the number entered is more than 10, log big number.
