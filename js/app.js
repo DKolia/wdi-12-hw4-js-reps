@@ -331,21 +331,35 @@ console.log("This is Homework 4");
 // Write an if...else if...else statement:
 
 
-x = 1                // Uncomment to test if-else-if-else statement
-// x = 500           // Uncomment to test if-else-if-else statement
-// x = "bananas"     // Uncomment to test if-else-if-else statement
-
-if (x === 1) {
-  console.log("x is equal to 1.");
-} else if (x > 1) {
-  console.log("x is greater than one.");
-} else {
-  console.log("Hmm, x may not be a number...");
-}
+// x = 1                // Uncomment to test if-else-if-else statement
+// // x = 500           // Uncomment to test if-else-if-else statement
+// // x = "bananas"     // Uncomment to test if-else-if-else statement
+//
+// if (x === 1) {
+//   console.log("x is equal to 1.");
+// } else if (x > 1) {
+//   console.log("x is greater than one.");
+// } else {
+//   console.log("Hmm, x may not be a number...");
+// }
 
 
 // console.log little number if the number entered is less than 5.
-//
+
+
+x = 1                // Uncomment to test if-else-if-else statement
+// x = 500           // Uncomment to test if-else-if-else statement
+// x = 7             // Uncomment to test if-else-if-else statement
+
+if (x < 5) {
+  console.log("little number");
+} else if (x > 10) {
+  console.log("big number");
+} else {
+  console.log("monkey");
+}
+
+
 // If the number entered is more than 10, log big number.
 //
 // Otherwise, console.log "monkey".
