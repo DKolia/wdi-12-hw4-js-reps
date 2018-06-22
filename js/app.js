@@ -184,22 +184,22 @@ console.log("This is Homework 4");
 // 9. Savings account //////////////////////////////////////////////////////////
 // Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 
-let bank_account = 0;       // Defines Variable
-for (let i = 1; i <= 10; i++) {     // Defines when loop begins and ends
-  bank_account = (bank_account += i)    // " += " causes the sum of i to be consistently added to the account
-}
-  console.log(bank_account);    // Logs final account numbers
+// let bank_account = 0;       // Defines Variable
+// for (let i = 1; i <= 10; i++) {     // Defines when loop begins and ends
+//   bank_account = (bank_account += i)    // " += " causes the sum of i to be consistently added to the account
+// }
+//   console.log(bank_account);    // Logs final account numbers
 
 // Check your work! Your banck_account should have $55 in it.
 //
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 // Check your work! Your banck_account should have $10,100 in it.
 
-let bank_account2 = 0;
-for (let i = 1; i <= 100; i++) {
-  bank_account2 = (bank_account2 += i * 2)  // This line adds a "* 2" to double the pay each week
-}
-  console.log(bank_account2);
+// let bank_account2 = 0;
+// for (let i = 1; i <= 100; i++) {
+//   bank_account2 = (bank_account2 += i * 2)  // This line adds a "* 2" to double the pay each week
+// }
+//   console.log(bank_account2);
 
 
 // 10. Multiples of 3 and 5 ////////////////////////////////////////////////////
@@ -209,6 +209,15 @@ for (let i = 1; i <= 100; i++) {
 //
 // 👏 You just solved Project Euler problem 1! 👏
 
+
+x = 0;
+
+for (let i = 0; i < 1000; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {  //  Tried running two if statements, but was getting wrong answer out of for loop. Perhaps was double counting multiples of 15- thus increasing the number. Putting the || operator seems to have fixed that.
+    x += i;
+  }
+}
+console.log(x);
 
 
 // 11. Easy Does It ////////////////////////////////////////////////////////////
