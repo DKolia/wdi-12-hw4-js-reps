@@ -565,25 +565,25 @@ console.log("This is Homework 4");
 // console.log(isAVowel("a"));
 // => true
 
-function isAVowel(string) {
-
-  if (string.length > 1) {
-    console.log("Too many letters");
-  } else {
-    if (string == "a" || string ==  "A" || string == "e" || string ==  "E" || string ==  "i" || string ==  "I" || string == "o" || string ==  "O" || string == "u" || string ==  "U") {
-      console.log("true, that is a vowel");
-    }
-
-    else {
-      console.log("False, that is not a vowel");
-    }
-  }
-}
-
-isAVowel("J");
-isAVowel("e");
-isAVowel("A");
-isAVowel("19");
+// function isAVowel(string) {
+//
+//   if (string.length > 1) {
+//     console.log("Too many letters");
+//   } else {
+//     if (string == "a" || string ==  "A" || string == "e" || string ==  "E" || string ==  "i" || string ==  "I" || string == "o" || string ==  "O" || string == "u" || string ==  "U") {
+//       console.log("true, that is a vowel");
+//     }
+//
+//     else {
+//       console.log("False, that is not a vowel");
+//     }
+//   }
+// }
+//
+// isAVowel("J");
+// isAVowel("e");
+// isAVowel("A");
+// isAVowel("19");
 
 // 23. "4"  ////////////////////////////////////////////////////////////////////
 // Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
@@ -592,6 +592,13 @@ isAVowel("19");
 // => [4, 13]
 
 
+function getTwoLengths(firstString, secondString) {
+  const results = [firstString.length, secondString.length]
+  console.log(results);
+}
+
+getTwoLengths("test", "wording");
+getTwoLengths("Harry", "Potter");
 
 //  24. "5" ////////////////////////////////////////////////////////////////////
 // Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
