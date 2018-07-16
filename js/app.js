@@ -448,11 +448,11 @@ console.log("This is Homework 4");
 // => Hello there, Slimer!
 
 
-const printGreeting = (printName) => {
-  console.log("Hello there, " + printName +"!");
-}
-
-printGreeting("Slimer")
+// const printGreeting = (printName) => {
+//   console.log("Hello there, " + printName +"!");
+// }
+//
+// printGreeting("Slimer")
 
 
 // 18. reverseWordOrder ////////////////////////////////////////////////////////
@@ -465,12 +465,60 @@ printGreeting("Slimer")
 // => "comb my on Lâncome use I"
 
 
+// function reverseWordOrder(str) {
+//     Declare
+//     const splitStringArray = str.split(" ")
+//     const reSplitStringArray = splitStringArray.reverse();
+//     for (let i = 0; i < reSplitStringArray.length; i++) {
+//       console.log(reSplitStringArray[i]);
+//     }
+//
+// }
+// reverseWordOrder("hello there");
+
 
 // 19. calculate  //////////////////////////////////////////////////////////////
 // Write a function called calculate.
 //
 // This function should take three arguments, two numbers and a string.
-//
+
+let num1 = 0;
+let num2 = 0;
+let answer = 0;
+let string = "";
+
+
+const calculate = (num1, num2, string) => {
+
+  if (string == "add") {
+    answer = num1 + num2
+    console.log(answer);
+  }
+  if (string == "sub") {
+    answer = num1 - num2
+    console.log(answer);
+  }
+  if (string == "mult") {
+    answer = num1 * num2
+    console.log(answer);
+  }
+  if (string == "div") {
+    answer = num1 / num2
+    console.log(answer);
+  }
+  if (string == "exp") {
+    answer = Math.pow(num1, num2)
+    console.log(answer);
+  }
+
+}
+
+console.log(calculate(5, 5, "add"));
+console.log(calculate(5, 5, "sub"));
+console.log(calculate(3, 5, "mult"));
+console.log(calculate(15, 5, "div"));
+console.log(calculate(5, 3, "exp"));
+
 // Name the parameters num1, num2, and operation.
 //
 // If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
