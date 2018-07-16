@@ -481,43 +481,43 @@ console.log("This is Homework 4");
 // Write a function called calculate.
 //
 // This function should take three arguments, two numbers and a string.
-
-let num1 = 0;
-let num2 = 0;
-let answer = 0;
-let string = "";
-
-
-const calculate = (num1, num2, string) => {
-
-  if (string == "add") {
-    answer = num1 + num2
-    console.log(answer);
-  }
-  if (string == "sub") {
-    answer = num1 - num2
-    console.log(answer);
-  }
-  if (string == "mult") {
-    answer = num1 * num2
-    console.log(answer);
-  }
-  if (string == "div") {
-    answer = num1 / num2
-    console.log(answer);
-  }
-  if (string == "exp") {
-    answer = Math.pow(num1, num2)
-    console.log(answer);
-  }
-
-}
-
-console.log(calculate(5, 5, "add"));
-console.log(calculate(5, 5, "sub"));
-console.log(calculate(3, 5, "mult"));
-console.log(calculate(15, 5, "div"));
-console.log(calculate(5, 3, "exp"));
+//
+// let num1 = 0;
+// let num2 = 0;
+// let answer = 0;
+// let string = "";
+//
+//
+// const calculate = (num1, num2, string) => {
+//
+//   if (string == "add") {
+//     answer = num1 + num2
+//     console.log(answer);
+//   }
+//   if (string == "sub") {
+//     answer = num1 - num2
+//     console.log(answer);
+//   }
+//   if (string == "mult") {
+//     answer = num1 * num2
+//     console.log(answer);
+//   }
+//   if (string == "div") {
+//     answer = num1 / num2
+//     console.log(answer);
+//   }
+//   if (string == "exp") {
+//     answer = Math.pow(num1, num2)
+//     console.log(answer);
+//   }
+//
+// }
+//
+// console.log(calculate(5, 5, "add"));
+// console.log(calculate(5, 5, "sub"));
+// console.log(calculate(3, 5, "mult"));
+// console.log(calculate(15, 5, "div"));
+// console.log(calculate(5, 3, "exp"));
 
 // Name the parameters num1, num2, and operation.
 //
@@ -538,10 +538,12 @@ console.log(calculate(5, 3, "exp"));
 
 // 20. "1"  ////////////////////////////////////////////////////////////////////
 // Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
-//
-// console.log(printCool("Captain Reynolds"));
-// => "Captain Reynolds is cool";
 
+
+function printCool(string) {
+  console.log(string + " is so cool.");
+}
+console.log(printCool("Reuben"));
 
 
 // 21. "2"  ////////////////////////////////////////////////////////////////////
