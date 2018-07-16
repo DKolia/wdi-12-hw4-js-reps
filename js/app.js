@@ -551,13 +551,13 @@ console.log("This is Homework 4");
 //
 // console.log(calculateCube(5));
 // => 125
-
-function calculateCube(num) {
-  console.log(num * num * num);
-}
-
-console.log(calculateCube(3));
-console.log(calculateCube(5));
+//
+// function calculateCube(num) {
+//   console.log(num * num * num);
+// }
+//
+// console.log(calculateCube(3));
+// console.log(calculateCube(5));
 
 // 22. "3"  ////////////////////////////////////////////////////////////////////
 // Write a function isAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
@@ -565,7 +565,25 @@ console.log(calculateCube(5));
 // console.log(isAVowel("a"));
 // => true
 
+function isAVowel(string) {
 
+  if (string.length > 1) {
+    console.log("Too many letters");
+  } else {
+    if (string == "a" || string ==  "A" || string == "e" || string ==  "E" || string ==  "i" || string ==  "I" || string == "o" || string ==  "O" || string == "u" || string ==  "U") {
+      console.log("true, that is a vowel");
+    }
+
+    else {
+      console.log("False, that is not a vowel");
+    }
+  }
+}
+
+isAVowel("J");
+isAVowel("e");
+isAVowel("A");
+isAVowel("19");
 
 // 23. "4"  ////////////////////////////////////////////////////////////////////
 // Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
