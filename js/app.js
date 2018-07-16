@@ -540,10 +540,10 @@ console.log("This is Homework 4");
 // Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
 
 
-function printCool(string) {
-  console.log(string + " is so cool.");
-}
-console.log(printCool("Reuben"));
+// function printCool(string) {
+//   console.log(string + " is so cool.");
+// }
+// console.log(printCool("Reuben"));
 
 
 // 21. "2"  ////////////////////////////////////////////////////////////////////
@@ -552,7 +552,12 @@ console.log(printCool("Reuben"));
 // console.log(calculateCube(5));
 // => 125
 
+function calculateCube(num) {
+  console.log(num * num * num);
+}
 
+console.log(calculateCube(3));
+console.log(calculateCube(5));
 
 // 22. "3"  ////////////////////////////////////////////////////////////////////
 // Write a function isAVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
