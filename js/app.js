@@ -465,16 +465,17 @@ console.log("This is Homework 4");
 // => "comb my on Lâncome use I"
 
 
-// function reverseWordOrder(str) {
-//     Declare
-//     const splitStringArray = str.split(" ")
-//     const reSplitStringArray = splitStringArray.reverse();
-//     for (let i = 0; i < reSplitStringArray.length; i++) {
-//       console.log(reSplitStringArray[i]);
-//     }
-//
-// }
-// reverseWordOrder("hello there");
+function reverseWordOrder(str) {
+
+    const splitStringArray = str.split(" ")
+    const reSplitStringArray = splitStringArray.reverse();
+    for (let i = 0; i < reSplitStringArray.length; i++) {
+    return reSplitStringArray.join(' ');
+    }
+}
+
+console.log(reverseWordOrder("Ishmael me Call"));
+console.log(reverseWordOrder("I use Lâncome on my comb"));
 
 
 // 19. calculate  //////////////////////////////////////////////////////////////
@@ -619,10 +620,10 @@ console.log("This is Homework 4");
 //
 // console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
 
-// *****************************************************************************
+
 //  25. "6" ////////////////////////////////////////////////////////////////////
 // Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
-//
+
 // console.log(maxOfThree(6, 9, 1));
 // => 9
 
@@ -639,13 +640,14 @@ console.log("This is Homework 4");
 //   } else if (num3 > num1 && num3 > num2) {
 //     console.log(num3);
 //     largestNum = num3
-//   } else {
-//     largestNum = num1
-//     console.log(largestNum);
+//   } else if (num1 >= num2){
+//     console.log(num1);
+//   } else if (num2 >= num3){
+//     console.log(num2);
 //   }
 // }
 //
-// maxOfThree(5, 66, 66);
+// maxOfThree(66, 66, 0);
 
 
 // 26. "7"  ////////////////////////////////////////////////////////////////////
@@ -777,45 +779,45 @@ console.log("This is Homework 4");
 
 
 
-const adventurer = {
-  name: "Gyveth",
-  hitpoints: 100,
-  weapon: "sword",
-  attack: "slash",
-  backpack: ["food", "loot", "wallet"],
-  attack(enemy) {
-    enemy.hitpoints = enemy.hitpoints - 40
-    console.log("The adventurer attacks! 40 damage!")
-    console.log("The ogre has " + enemy.hitpoints + " remaining.");
-    this.death()
-  },
-  death() {
-    if (this.hitpoints <= 0) {
-      console.log("The hero is slain!");
-    }
-  }
-}
-
-const ogre = {
-  hitpoints: 50,
-  weapon: "fists",
-  attack(opponent) {
-    opponent.hitpoints = opponent.hitpoints - 25
-    console.log("The ogre attacks! 25 damage!")
-    console.log("The hero has " + opponent.hitpoints + " remaining.")
-    this.death()
-  },
-  death() {
-    if (this.hitpoints <= 0) {
-      console.log("The ogre is slain!");
-    }
-  }
-};
-
-console.log("Round 1");
-adventurer.attack(ogre);
-ogre.attack(adventurer);
-console.log("Round 2");
-adventurer.attack(ogre);
-ogre.attack(adventurer);
+// const adventurer = {
+//   name: "Gyveth",
+//   hitpoints: 100,
+//   weapon: "sword",
+//   attack: "slash",
+//   backpack: ["food", "loot", "wallet"],
+//   attack(enemy) {
+//     enemy.hitpoints = enemy.hitpoints - 40
+//     console.log("The adventurer attacks! 40 damage!")
+//     console.log("The ogre has " + enemy.hitpoints + " remaining.");
+//     this.death()
+//   },
+//   death() {
+//     if (this.hitpoints <= 0) {
+//       console.log("The hero is slain!");
+//     }
+//   }
+// }
+//
+// const ogre = {
+//   hitpoints: 50,
+//   weapon: "fists",
+//   attack(opponent) {
+//     opponent.hitpoints = opponent.hitpoints - 25
+//     console.log("The ogre attacks! 25 damage!")
+//     console.log("The hero has " + opponent.hitpoints + " remaining.")
+//     this.death()
+//   },
+//   death() {
+//     if (this.hitpoints <= 0) {
+//       console.log("The ogre is slain!");
+//     }
+//   }
+// };
+//
+// console.log("Round 1");
+// adventurer.attack(ogre);
+// ogre.attack(adventurer);
+// console.log("Round 2");
+// adventurer.attack(ogre);
+// ogre.attack(adventurer);
 //  This will enentually be replaced with a loop to keep the attacks going back and forth.
