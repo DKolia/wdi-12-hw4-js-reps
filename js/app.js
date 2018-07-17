@@ -592,13 +592,13 @@ console.log("This is Homework 4");
 // => [4, 13]
 
 
-function getTwoLengths(firstString, secondString) {
-  const results = [firstString.length, secondString.length]
-  console.log(results);
-}
-
-getTwoLengths("test", "wording");
-getTwoLengths("Harry", "Potter");
+// function getTwoLengths(firstString, secondString) {
+//   const results = [firstString.length, secondString.length]
+//   console.log(results);
+// }
+//
+// getTwoLengths("test", "wording");
+// getTwoLengths("Harry", "Potter");
 
 //  24. "5" ////////////////////////////////////////////////////////////////////
 // Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
@@ -606,6 +606,18 @@ getTwoLengths("Harry", "Potter");
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // => [5, 4, 2, 2, 4]
 
+function getMultipleLengths(param1) {
+
+  const answer = [];
+
+  for (var i = 0; i < param1.length; i++) {
+    answer.push(param1[i].length)
+ }
+    console.log(answer);
+}
+
+
+console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
 
 
 //  25. "6" ////////////////////////////////////////////////////////////////////
