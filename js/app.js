@@ -680,13 +680,13 @@ console.log("This is Homework 4");
 // console.log(transmogrify(5, 3, 2));
 // => 225
 
-function transmogrify(num1, num2, num3) {
-  product = num1 * num2
-  product = Math.pow(product, num3)
-  console.log(product);
-}
-
-  console.log(transmogrify(5, 3, 2));
+// function transmogrify(num1, num2, num3) {
+//   product = num1 * num2
+//   product = Math.pow(product, num3)
+//   console.log(product);
+// }
+//
+//   console.log(transmogrify(5, 3, 2));
 
 // 27. Syntax //////////////////////////////////////////////////////////////////
 // List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
@@ -695,6 +695,19 @@ function transmogrify(num1, num2, num3) {
 //
 // {} curly braces define the object.
 
+const object = {
+  name: "brad",
+  backpack: "patagonia",
+ }
+
+Const/let helps define the Variable
+"object" in this example is a name, you can name it anything
+= is the assignment operator, common to variables
+{ } are for containing items within the object
+"name" in this example is an key in key value pair
+"brad" in this example is their value
+the comma helps create a list and separates things
+[ ] *can* be used for arrays within objects
 
 
 // 28. Me //////////////////////////////////////////////////////////////////////
