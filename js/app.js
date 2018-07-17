@@ -606,18 +606,18 @@ console.log("This is Homework 4");
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // => [5, 4, 2, 2, 4]
 
-function getMultipleLengths(param1) {
-
-  const answer = [];
-
-  for (var i = 0; i < param1.length; i++) {
-    answer.push(param1[i].length)
- }
-    console.log(answer);
-}
-
-
-console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
+// function getMultipleLengths(param1) {
+//
+//   const answer = [];
+//
+//   for (var i = 0; i < param1.length; i++) {
+//     answer.push(param1[i].length)
+//  }
+//     console.log(answer);
+// }
+//
+//
+// console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
 
 
 //  25. "6" ////////////////////////////////////////////////////////////////////
@@ -626,6 +626,26 @@ console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
 // console.log(maxOfThree(6, 9, 1));
 // => 9
 
+//
+// function maxOfThree(num1, num2, num3) {
+//   largestNum = 0;
+//
+//   if (num1 > num2 && num1 > num3) {
+//     console.log(num1);
+//     largestNum = num1
+//   } else if (num2 > num1 && num2 > num3) {
+//     console.log(num2);
+//     largestNum = num2
+//   } else if (num3 > num1 && num3 > num2) {
+//     console.log(num3);
+//     largestNum = num3
+//   } else {
+//     largestNum = num1
+//     console.log(largestNum);
+//   }
+// }
+//
+// maxOfThree(5, 66, 66);
 
 
 // 26. "7"  ////////////////////////////////////////////////////////////////////
@@ -633,6 +653,20 @@ console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
 //
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 // => "Peanutbutter"
+
+
+function printLongestWord(arg1) {
+  let longestString = "";
+
+  for (let i = 0; i < arg1.length; i++) {
+    if (arg1[i].length >= longestString.length) {
+      longestString = arg1[i]
+    }
+  }
+  console.log(longestString);
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 
 
