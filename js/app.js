@@ -739,29 +739,29 @@ console.log("This is Homework 4");
 
 
 // 29. Slimer //////////////////////////////////////////////////////////////////
-const monster = {
-   name: "Slimer",
-   color: "greenish",
-   type: "plasm or ghost or something"
-}
-// Given the slimer object:
-// What would you write to access the name and console.log it?
-// What would you write to change the type to 'creature' (without changing it inside the object)
-// What would you write to add a key to the object called age, and set the age to 6?
-// console.log the object to make sure type is creature, and age is 6
-
-console.log(monster.name);
-monster.type = "creature"
-console.log(monster.type);
-monster.age = 6;
-console.log(monster.age);
-console.log(monster);
+// const monster = {
+//    name: "Slimer",
+//    color: "greenish",
+//    type: "plasm or ghost or something"
+// }
+// // Given the slimer object:
+// // What would you write to access the name and console.log it?
+// // What would you write to change the type to 'creature' (without changing it inside the object)
+// // What would you write to add a key to the object called age, and set the age to 6?
+// // console.log the object to make sure type is creature, and age is 6
+//
+// console.log(monster.name);
+// monster.type = "creature"
+// console.log(monster.type);
+// monster.age = 6;
+// console.log(monster.age);
+// console.log(monster);
 
 
 
 
 // 30. Ogres  //////////////////////////////////////////////////////////////////
-// Let's say you want to make an adventure game where you are an adventurer and you are going to fight ogres.
+// Lets say you want to make an adventure game where you are an adventurer and you are going to fight ogres.
 //
 // Using objects, create models and have them interact.
 //
@@ -771,6 +771,51 @@ console.log(monster);
 //
 // Write a very small program that will simulate a battle between your adventurer and an ogre.
 //
-// When your adventurer's hitpoints reach 0 the game is over.
-// When your ogre's hitpoints reach 0 the game is over.
-// If you want to provide input to the game, you can run it in the Chrome console (but that isn't strictly necessary for now).
+// When your adventurers hitpoints reach 0 the game is over.
+// When your ogres hitpoints reach 0 the game is over.
+// If you want to provide input to the game, you can run it in the Chrome console (but that isnt strictly necessary for now).
+
+
+
+const adventurer = {
+  name: "Gyveth",
+  hitpoints: 100,
+  weapon: "sword",
+  attack: "slash",
+  backpack: ["food", "loot", "wallet"],
+  attack(enemy) {
+    enemy.hitpoints = enemy.hitpoints - 40
+    console.log("The adventurer attacks! 40 damage!")
+    console.log("The ogre has " + enemy.hitpoints + " remaining.");
+    this.death()
+  },
+  death() {
+    if (this.hitpoints <= 0) {
+      console.log("The hero is slain!");
+    }
+  }
+}
+
+const ogre = {
+  hitpoints: 50,
+  weapon: "fists",
+  attack(opponent) {
+    opponent.hitpoints = opponent.hitpoints - 25
+    console.log("The ogre attacks! 25 damage!")
+    console.log("The hero has " + opponent.hitpoints + " remaining.")
+    this.death()
+  },
+  death() {
+    if (this.hitpoints <= 0) {
+      console.log("The ogre is slain!");
+    }
+  }
+};
+
+console.log("Round 1");
+adventurer.attack(ogre);
+ogre.attack(adventurer);
+console.log("Round 2");
+adventurer.attack(ogre);
+ogre.attack(adventurer);
+//  This will enentually be replaced with a loop to keep the attacks going back and forth.
