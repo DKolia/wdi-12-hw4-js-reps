@@ -724,31 +724,39 @@ console.log("This is Homework 4");
 // Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
 // Access the value of "place of residence"
 
-let me = {
-  name: "David",
-  age: 29,
-  email: "DKolia@icloud.com",
-}
-
-console.log(me);
-console.log(me.name);
-me.age = 1000;
-console.log(me.age);
-me["place of residence"] = "chicago";
-console.log(me);
+// let me = {
+//   name: "David",
+//   age: 29,
+//   email: "DKolia@icloud.com",
+// }
+//
+// console.log(me);
+// console.log(me.name);
+// me.age = 1000;
+// console.log(me.age);
+// me["place of residence"] = "chicago";
+// console.log(me);
 
 
 // 29. Slimer //////////////////////////////////////////////////////////////////
-// const monster = {
-//    name: "Slimer",
-//    color: "greenish",
-//    type: "plasm or ghost or something"
-// }
+const monster = {
+   name: "Slimer",
+   color: "greenish",
+   type: "plasm or ghost or something"
+}
 // Given the slimer object:
 // What would you write to access the name and console.log it?
 // What would you write to change the type to 'creature' (without changing it inside the object)
 // What would you write to add a key to the object called age, and set the age to 6?
 // console.log the object to make sure type is creature, and age is 6
+
+console.log(monster.name);
+monster.type = "creature"
+console.log(monster.type);
+monster.age = 6;
+console.log(monster.age);
+console.log(monster);
+
 
 
 
