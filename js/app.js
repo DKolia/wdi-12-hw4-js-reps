@@ -694,20 +694,20 @@ console.log("This is Homework 4");
 // Example:
 //
 // {} curly braces define the object.
-
-const object = {
-  name: "brad",
-  backpack: "patagonia",
- }
-
-Const/let helps define the Variable
-"object" in this example is a name, you can name it anything
-= is the assignment operator, common to variables
-{ } are for containing items within the object
-"name" in this example is an key in key value pair
-"brad" in this example is their value
-the comma helps create a list and separates things
-[ ] *can* be used for arrays within objects
+//
+// const object = {
+//   name: "brad",
+//   backpack: "patagonia",
+//  }
+//
+// Const/let helps define the Variable
+// "object" in this example is a name, you can name it anything
+// = is the assignment operator, common to variables
+// { } are for containing items within the object
+// "name" in this example is an key in key value pair
+// "brad" in this example is their value
+// the comma helps create a list and separates things
+// [ ] *can* be used for arrays within objects
 
 
 // 28. Me //////////////////////////////////////////////////////////////////////
@@ -724,6 +724,18 @@ the comma helps create a list and separates things
 // Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
 // Access the value of "place of residence"
 
+let me = {
+  name: "David",
+  age: 29,
+  email: "DKolia@icloud.com",
+}
+
+console.log(me);
+console.log(me.name);
+me.age = 1000;
+console.log(me.age);
+me["place of residence"] = "chicago";
+console.log(me);
 
 
 // 29. Slimer //////////////////////////////////////////////////////////////////
