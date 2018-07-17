@@ -454,7 +454,7 @@ console.log("This is Homework 4");
 //
 // printGreeting("Slimer")
 
-
+//******************************************************************************
 // 18. reverseWordOrder ////////////////////////////////////////////////////////
 // Write a function reverseWordOrder that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
 //
@@ -619,7 +619,7 @@ console.log("This is Homework 4");
 //
 // console.log(getMultipleLengths(["Harry", "Potter", "is", "a", "wizard"]));
 
-
+// *****************************************************************************
 //  25. "6" ////////////////////////////////////////////////////////////////////
 // Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
 //
@@ -655,18 +655,18 @@ console.log("This is Homework 4");
 // => "Peanutbutter"
 
 
-function printLongestWord(arg1) {
-  let longestString = "";
-
-  for (let i = 0; i < arg1.length; i++) {
-    if (arg1[i].length >= longestString.length) {
-      longestString = arg1[i]
-    }
-  }
-  console.log(longestString);
-}
-
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// function printLongestWord(arg1) {
+//   let longestString = "";
+//
+//   for (let i = 0; i < arg1.length; i++) {
+//     if (arg1[i].length >= longestString.length) {
+//       longestString = arg1[i]
+//     }
+//   }
+//   console.log(longestString);
+// }
+//
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 
 
 
@@ -680,7 +680,13 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // console.log(transmogrify(5, 3, 2));
 // => 225
 
+function transmogrify(num1, num2, num3) {
+  product = num1 * num2
+  product = Math.pow(product, num3)
+  console.log(product);
+}
 
+  console.log(transmogrify(5, 3, 2));
 
 // 27. Syntax //////////////////////////////////////////////////////////////////
 // List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
